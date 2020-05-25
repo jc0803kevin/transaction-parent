@@ -5,6 +5,8 @@ import com.kevin.trans.service.UserService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.annotation.Resource;
+
 /**
  * @Author kevin
  * @Description
@@ -12,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 public class UserServiceTest extends BaseTest {
 
-    @Autowired
+    @Resource(name = "userServiceImpl")
     private UserService userService;
 
     @Test
